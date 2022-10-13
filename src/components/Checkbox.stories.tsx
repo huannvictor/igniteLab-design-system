@@ -10,10 +10,10 @@ export default {
   decorators: [
     (Story) => {
       return (
-        <div className='flex items-center gap-2'>
+        <label className='flex items-center gap-2' htmlFor='checkbox'>
           {Story()}
-          <label htmlFor='checkbox' className='text-xs text-gray-200' >Lembrar de mim por 30 dias</label>
-        </div>
+          <Text className='text-xs text-gray-200' >Lembrar de mim por 30 dias</Text>
+        </label>
       )
     }
   ]
